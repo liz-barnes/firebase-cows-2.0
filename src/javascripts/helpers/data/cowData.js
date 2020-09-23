@@ -17,6 +17,8 @@ const getCows = () => new Promise((resolve, reject) => {
     resolve(cows);
   }).catch((error) => reject(error));
 });
+
+const deleteCow = (firebaseKey) => axios.delete(`${baseUrl}/cows/${firebaseKey}.json`);
 // const getCows = () => axios.get(`${baseUrl}/cows.json`);
 
-export default { getCows };
+export default { getCows, deleteCow };
