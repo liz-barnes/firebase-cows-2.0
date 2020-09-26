@@ -86,4 +86,9 @@ const deleteFarmer = (farmerUid) => {
     });
 };
 
-export default { setCurrentFarmer, getAllFarmers, deleteFarmer };
+export default {
+  setCurrentFarmer,
+  getAllFarmers,
+  deleteFarmer,
+  getSingleFarmer
+};
